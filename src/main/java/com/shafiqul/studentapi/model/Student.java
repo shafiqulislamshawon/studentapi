@@ -27,7 +27,7 @@ public class Student {
 
 	
 	@Column(unique=true)
-	private int id;
+	private long id;
 
 	@Column(name = "name")
 	private String name;
