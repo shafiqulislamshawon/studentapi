@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost/studentdb?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    password: ''
+  sql:
+    init:
+      mode: always
+      platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
