@@ -65,6 +65,7 @@ public class StudentController {
     public ResponseEntity<Student> newStudent(@RequestBody Student student) {
         Student newStudent = studentRepository
                 .save(Student.builder()
+                        .id(student.getId())
                         .name(student.getName())
                         .address(student.getAddress())
                         .build());
